@@ -837,15 +837,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
---- !u!114 &2066431603
-MonoBehaviour:
+  now: 13
+  _1range: 90
+  _2range: 94
+  rotate: {x: 0, y: 90, z: 0}
+--- !u!65 &2066431604
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066431597}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f6b594ac065852459d1550a5fe366ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 2
+  m_Size: {x: 0.21050951, y: 0.20135833, z: 0.40000004}
+  m_Center: {x: -0.002369091, y: 0.061632015, z: 0}
