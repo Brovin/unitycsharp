@@ -16,8 +16,8 @@ public class MainScriptL2 : MonoBehaviour
     void Update()
     {
         rb.MovePosition(transform.position + transform.forward * speed * Time.deltaTime);
-        if(transform.localPosition.z > 17) {
-            rb.MovePosition(transform.position + transform.right * speed * Time.deltaTime);
+        if(transform.localPosition.z > 17 && Mathf.Floor(transform.eulerAngles.y) != 180) {
+           transform.rotation = Quaternion.Euler(new Vector3(0, 90, 0));
         }
     }
 }
