@@ -2,19 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent (typeof(Rigidbody))]
 public class MainScriptL2 : MonoBehaviour
 {
-    public Animator anim;
+    private Rigidbody rb;
+    public float speed = 7f;
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0)){
-            anim.SetBool("BoolCube", true);
+        rb.MovePosition(transform.position + transform.forward * speed * Time.deltaTime);
+        if(transform.localPosition.z > 17) {
+            rb.MovePosition(transform.position + transform.right * speed * Time.deltaTime);
         }
     }
 }
